@@ -1,0 +1,321 @@
+
+
+*{
+  box-sizing: border-box; 
+  font-family: 'Quicksand', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.wrap{
+  min-height: 100%;
+  width: 100%; 
+  max-width: 2550px;
+  margin: 0 auto;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, transparent, rgb(56, 55, 55)),
+  url(./images/Background.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+
+header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+h3{
+    color: rgb(248, 226, 226);
+    font-size: 2vw;
+}
+.ava{
+    height: 20vw;
+    width: 20vw;
+    background-image: url(./images/newAva.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+h1{
+    color: rgb(248, 226, 226);
+    font-size: x-large;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
+.nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 20vw;
+    height: 5vw;
+    border: 2px solid rgb(248, 226, 226);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(248, 226, 226);
+    font-size: 1.2vw;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.nav a{
+	width: 100%;
+	height: 100%;
+	text-align: center;	
+	padding: 50% 0;
+	margin-top: -6%;
+	text-decoration: none;
+	color: rgb(248, 226, 226);
+}
+
+.contactsPage{
+	display: none;
+    animation: animationPages 0.8s ;   
+   	position: absolute;   	
+}
+.educationPage{
+	display: none;
+    animation: animationPages 0.8s ;   
+   	position: absolute;
+}
+.aboutMyPage{
+	display: none;
+    animation: animationPages 0.8s ;   
+   	position: absolute;
+}
+.technicalSkillsPage{
+	display: none;
+    animation: animationPages 0.8s ;   
+   	position: absolute;
+}
+.portfolioPage{
+	display: none;
+    animation: animationPages 0.8s ;   
+   	position: absolute;
+}
+
+.popup{
+	background: grey;
+	box-shadow: inset 0px 0px 30px 15px rgba(0,0,0,0.6);
+	opacity: 0.97;
+	color: black;
+	border-radius: 3px;  
+	width: 92vw;
+   	min-height: 90vh;       	 	
+}
+
+@keyframes animationPages{
+	0%{		
+		transform: scale(0.2);		
+		font-size: 0.02vw;		
+	}
+	100%{		
+		width: 92vw;
+    	height: 90vh;
+    	font-size: 1.2vw;
+    	transform: scale(1);    	
+	}
+}
+.wrapper{
+    padding: 3% 5% 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;   
+}
+.portfolio{
+	align-items: center;
+}
+h2{
+	align-self: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+p{
+	font-family: "Caveat-Regular";
+	font-size: 2vw;
+	padding: 5px 0;
+}
+a{
+    color: rgb(12, 32, 27);
+    text-decoration: none; 
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.wrapBox{
+	display: block;		
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	width: 80%;
+	max-width: 1200px;
+	height: 75vh;
+}
+.wrapBox::-webkit-scrollbar{
+	width: 3px;
+	background-color: grey;
+}
+.wrapBox::-webkit-scrollbar-thumb{
+	background-color: rgb(73, 72, 72);
+}
+.portfolioBox{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+.portfolioItem{
+	width: 300px;
+	height: 300px;
+	margin: 5px;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: rgb(155, 158, 161);
+	border-radius: 2px;
+	position: relative;
+}
+
+.portfolioItem p{
+	padding: 5px;	
+}
+.portfolioItem a{
+	position: absolute;
+	bottom: 7px;
+	left: 5px;
+	border: 1px solid black;
+	color: black;
+	font-style: italic;
+	font-size: 1vw;
+	padding: 1px 5px;
+}
+.portfolioItem a:hover{
+	transform: scale(0.98);
+	background-color: rgb(139, 141, 143);
+}
+.scrinItem {
+	width: 100%;
+	height: 45%;
+	overflow: hidden;
+	position: relative;
+}
+.scrinItem img{
+	width: 100%;
+	height: 100%;
+	object-fit: center top;
+}
+.scrinItem img:hover{
+	transform: scale(1.2);
+}
+.mobileMenu{
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url("./images/iconMenu.png");
+	background-size: cover;
+}
+
+@font-face {
+font-family: "Caveat-Regular";  
+src: url("./fonts/Caveat/Caveat-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+
+
+ @media only screen
+and (max-width: 425px){
+	.wrap{
+		height: 100vh;
+	}
+	header{
+		justify-content: center;
+	}
+	.mobiNav{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	
+	}
+	.btn{
+		display: none;
+	}
+	.ava{
+		height: 150px;
+		width: 150px;
+	}
+	h1, h2, .close{
+		font-size: 20px;
+	}
+	h3, p{
+		font-size: 16px;
+	}
+	.popup{	    
+	  	font-size: 2vw; 
+	  	width: 100vw;
+    	height: 100vh;       	 	
+	}
+	.wrapBox::-webkit-scrollbar{
+	display: none;
+	}
+	.portfolio p {
+		font-size: 22px;
+	}
+	.portfolio a{
+		font-size: 14px;
+	}
+	.portfolioBox{
+		width: 100%;
+		height: 87vh;		
+	}
+	.portfolioItem{
+		width: 100%;
+		height: 300px;
+		margin-bottom: 0 auto 10px;		
+	}
+	.scrinItem{
+		width: 100%;
+		height: 150px;
+	}
+}
+@media only screen
+and (min-width: 1460px) {
+	.portfolio p {
+		font-size: 26px;
+	}
+	.portfolio a{
+		font-size: 16px;
+	}
+}

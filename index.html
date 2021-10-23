@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MyPresentation</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap">
+		<header id="header">
+			<div class="mobileMenu"></div>
+		<div  class="nav">
+			<div onclick="portfolioShow(), createPortfolioList()" class="btn">portfolio</div>
+			<div class="btn"><a target="blank" href="https://github.com/mykolka">github</a></div>
+			<div onclick="skillsShow()" class="btn">technical skills</div>
+		</div>
+		<div class="avatar">
+			<h3>Mykola Dutka</h3>
+			<div class="ava"></div>
+			<h1>front end developer</h1>
+		</div>
+		<div class="nav">
+			<div onclick="contactsShow()" class="btn">contacts</div>
+			<div onclick="educationShow()" class="btn">education</div>
+			<div onclick="AboutMyShow()" class="btn">about my</div>
+		</div>
+		
+
+		<div class="contactsPage">			
+			<div class="popup">
+				<div class="wrapper">	
+				<h2>contacts</h2>			
+				<p><b>Telephone/Viber/WhatsApp/Telegram:</b> <a href="#">+38(097) 921 74 95</a></p>	
+				<p><b>Email:</b> <a href="#">kolyanus84@gmail.com</a></p>
+				<p><b>Skype:</b><a href="#"> live:.cid.a5c0dc8945c27891</a></p>
+				<p><b>LinkedIn:</b> <a target="blank" href="https://www.linkedin.com/in/mykola-dutka-6037b0196/">https://www.linkedin.com/in/mykola-dutka-6037b0196/</a></p>
+			</div>
+			<div id="closeContacts" class="close">+</div>
+			</div>
+		</div>
+		<div class="educationPage">
+			<div class="popup">
+				<div class="wrapper">	
+				<h2>education</h2>			
+				<p><b>ITEA:</b> <br/>
+				 (IT Education Academy/Lviv) Information Technology cadet: HTML, CSS, JS</p>
+				<p><b>OEAEP:</b><br/>(Otevřená evropská akademie ekonomiky a politiky/Praha) Economic master: financial management</p>
+				<p><b>ChNU:</b><br> (Yuriy Fedkovych Chernivtsi National University) Economic bachelor: finance and audit</p>
+				<p><b>BCMS:</b><br> (Beregomet children's music school) Brass Instruments trumpet</p>
+			</div>
+			<div id="closeEducation"  class="close">+</div>
+			</div>
+		</div>
+		<div class="aboutMyPage">
+			<div class="popup">
+				<div class="wrapper">	
+				<h2>about my</h2>			
+				<p>I really like writing code. So I am sure that I will reach a good level in this area. I strive for development! I have a positive experience of working in different teams. I like hiking the mounties, play tennis and football. I have a sense of humor.</p>
+			</div>
+			<div id="closeAbout"  class="close">+</div>
+			</div>
+		</div>
+		<div class="technicalSkillsPage">
+			<div class="popup">
+				<div class="wrapper">	
+				<h2>technical skills</h2>			
+				<p>HTML5;<br> CSS3/ Bootstrap/ Flex/ Grid/ CSS-animation/ SASS/ BEM-methodology;<br> JS/ OOP/ React/ Flux/ Redux/ TypeScript;<br> Git/ Trello/ Prepros;</p>
+			</div>
+			<div id="closeSkills"  class="close">+</div>
+			</div>
+		</div>
+		<div class="portfolioPage">
+			<div class="popup">
+				<div class="wrapper portfolio">	
+					<h2>portfolio</h2>					
+					<div class="wrapBox">
+						<div class="portfolioBox"></div>
+					</div>	
+				</div>
+				<div id="closePortfolio"  class="close">+</div>
+			</div>
+		</div>
+	</header>
+	</div>	
+
+	<script src="main.js"></script>
+</body>
+</html>
