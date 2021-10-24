@@ -8,7 +8,7 @@ const portfolioElements = {
 	autoScool: {
 		titlePhoto: "./images/autoscool.jpeg",
 		description: "Презентаційна сторінка зі слайдером та картами.",
-		link: "https://mykolka.github.io/realProject/"
+		link: "https://mykolka.github.io/autoScool/"
 	},
 	porsche: {
 		titlePhoto: "./images/porsche.jpeg",
