@@ -19,24 +19,25 @@ const portfolioElements = {
 		titlePhoto: "./images/layout.jpeg",
 		description: "Верстка макету з scss / без адаптиву.",
 		link: "https://mykolka.github.io/landingPage/"
-	},
-	maket: {
-		titlePhoto: "./images/maket.jpeg",
-		description: "Верстка макету з допомогою bootstrap / без адаптиву.",
-		link: "https://mykolka.github.io/myTasc/"
-	},
+	},	
 	table: {
 		titlePhoto: "./images/table.jpeg",
 		description: "Таблиця з частковим функціоналом на React.js / без адаптиву.",
 		link: "https://mykolka.github.io/DZ/"
+	},
+	landing: {
+		titlePhoto: "./images/landing.jpeg",
+		description: "Верстка макету. Адаптив / scss / js",
+		link: "https://mykolka.github.io/tascAdaptiveLanding/"
 	}
 }
+
 
 const box = document.querySelector(".portfolioBox");
 
 let createPortfolioList = function() {	
 	const portfolioElementsName = [
-		'koalaTasc','autoScool', 'porsche', 'layout', 'maket', 'table'
+		'landing','koalaTasc','autoScool', 'porsche', 'layout', 'table', 
 	];
 
 
