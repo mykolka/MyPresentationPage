@@ -13,7 +13,7 @@ const portfolioElements = {
 	porsche: {
 		titlePhoto: "./images/porsche.jpeg",
 		description: "Адаптивна верстка з поп-апами та слайдером.",
-		link: "https://mykolka.github.io/tascFrontEnd1/"
+		link: "https://mykolka.github.io/tasc_Front_End/"
 	},
 	layout: {
 		titlePhoto: "./images/layout.jpeg",
