@@ -43,7 +43,7 @@ h3{
 .ava{
     height: 20vw;
     width: 20vw;
-    background-image: url(./images/newAva.jpeg);
+    background-image: url(./images/avatar.jpeg);
     background-size: cover;
     border-radius: 50%;
     margin: 20px 0;
@@ -99,7 +99,7 @@ h1{
     animation: animationPages 0.8s ;   
    	position: absolute;
 }
-.aboutMyPage{
+.aboutMePage{
 	display: none;
     animation: animationPages 0.8s ;   
    	position: absolute;
@@ -116,7 +116,7 @@ h1{
 }
 
 .popup{
-	background: grey;
+	background: rgb(69, 133, 145);
 	box-shadow: inset 0px 0px 30px 15px rgba(0,0,0,0.6);
 	opacity: 0.97;
 	color: black;
@@ -153,13 +153,22 @@ h2{
 	margin-bottom: 10px;
 }
 p{
-	font-family: "Caveat-Regular";
-	font-size: 2vw;
+	/*font-family: "Caveat-Regular";*/
+	font-size: 1.6vw;
 	padding: 5px 0;
 }
 a{
     color: rgb(12, 32, 27);
     text-decoration: none; 
+}
+
+@keyframes closePage {
+	0%{
+		transform: rotate(0deg);
+	}	
+	100%{
+		transform: rotate(720deg);
+	}
 }
 
 .close{
@@ -168,8 +177,9 @@ a{
     right: 10px;
     transform: rotate(45deg);
     cursor: pointer;
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     font-weight: bold;
+    animation: 1.5s closePage 0.7s;
 }
 
 .wrapBox{
@@ -206,7 +216,9 @@ a{
 }
 
 .portfolioItem p{
-	padding: 5px;	
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+
 }
 .portfolioItem a{
 	position: absolute;

@@ -72,7 +72,7 @@ let closeContacts = document.getElementById("closeContacts"),
 
 	portfolioBlock = document.querySelector(".portfolioPage"),
 	skillsBlock = document.querySelector(".technicalSkillsPage"),
-	aboutMyBlock = document.querySelector(".aboutMyPage"),
+	aboutMeBlock = document.querySelector(".aboutMePage"),
 	contactsBlock = document.querySelector(".contactsPage"),	
 	educationBlock = document.querySelector(".educationPage");
 
@@ -84,8 +84,8 @@ let contactsShow = function() {
 let educationShow = function() {
 	educationBlock.style.display = "block";	
 }
-let AboutMyShow = function() {
-	aboutMyBlock.style.display = "block";	
+let AboutMeShow = function() {
+	aboutMeBlock.style.display = "block";	
 }
 let skillsShow = function() {
 	skillsBlock.style.display = "block";	
@@ -104,9 +104,9 @@ closeEducation.onclick = function(e) {
 	educationBlock.style.display = "none";
 }
 closeAbout.onclick = function(e) {	
-	aboutMyBlock.style.display = "none";
+	aboutMeBlock.style.display = "none";
 }
-closeSkills.onclick = function(e) {	
+closeSkills.onclick = function(e) {	 
 	skillsBlock.style.display = "none";
 }
 closePortfolio.onclick = function(e) {	
@@ -157,7 +157,7 @@ if(screenWidth <= 425) {
 		<li onclick="skillsShow()">technical skills</li>
 		<li onclick="contactsShow()">contacts</li>
 		<li onclick="educationShow()">education</li>
-		<li onclick="AboutMyShow()">about my</li>
+		<li onclick="AboutMeShow()">about me</li>
 	</ul>
 
 		`
